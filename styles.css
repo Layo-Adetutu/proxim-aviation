@@ -1,0 +1,172 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #4b1c71, #7b2cbf);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+    rgba(75,28,113,0.85),
+    rgba(75,28,113,0.85)
+  ),
+  url('https://images.unsplash.com/photo-1540962351504-03099e0a754b');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 60px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons button {
+  padding: 15px 35px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #ffffff;
+  color: #5a189a;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+/* BOOKING BAR */
+.booking-bar {
+  background: white;
+  margin: -50px auto 0;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.booking-bar div {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-bar label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.booking-bar input,
+.booking-bar select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.booking-bar button {
+  background: #5a189a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+/* SERVICES */
+.services {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #3c096c;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-box h4 {
+  margin-bottom: 15px;
+  color: #5a189a;
+}
+
+/* FOOTER */
+footer {
+  background: #2d0b59;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+
